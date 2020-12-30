@@ -116,6 +116,6 @@ def test404(request):
 
 def create_messages(request):
     for i in range(1, 100):
-        Message.objects.create(name=f"message-{i}", email=f"email.{i}@gmail.com", message="This is a test email for testing django pagination")
+        Message.objects.create(name=f"message-{i}", email=f"email.{i}@gmail.com", message=f"This is a test email for testing django pagination")
     return HttpResponse("<h1>Create another 99 message</h1>")
 
