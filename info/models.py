@@ -15,6 +15,7 @@ class Information(models.Model):
     cv = models.FileField(upload_to='cv', blank=True, null=True)
 
     # Social Network
+    upwork = models.URLField(blank=True, null=True)
     github = models.URLField(blank=True, null=True)
     linkedin = models.URLField(blank=True, null=True)
     facebook = models.URLField(blank=True, null=True)
