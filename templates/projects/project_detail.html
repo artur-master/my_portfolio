@@ -26,14 +26,18 @@
 
             <div class="text-left pt-4">
                 <p class="mini-title mb-3">Preview:</p>
+                {% if project.github %}
                 <a href="{{project.github}}" class="preview-btn">
                     <i class="fab fa-github"></i>
                     Source Code On Github
                 </a>
+                {% endif %}
+                {% if project.demo %}
                 <a href="{{project.demo}}" class="preview-btn">
                     <i class="fas fa-globe"></i> 
                     Site Web On Live
                 </a>
+                {% endif %}
             </div>
         </div>
     </div>
